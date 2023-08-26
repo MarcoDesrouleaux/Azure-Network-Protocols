@@ -62,14 +62,30 @@ This guide walks you through the process of setting up and using WireShark to mo
 
 ## Step 3: Configure Capture Settings
 
-### 3.1 Set Capture Filters
-1. Open WireShark on the VM.
-2. Navigate to 'Capture' > 'Options.'
-3. Set capture filters to focus on the traffic you're interested in.
-
-### 3.2 Start Capturing Traffic
+### 3.1 Start Capturing Traffic
 1. Still in WireShark, click 'Start' to begin capturing packets.
 2. You can stop the capture at any time by clicking 'Stop.'
+3. Let's start filtering for ICMP (Internet Control Messaging Protocol) traffic. (It's the protocol that ping uses).
+4. We'll test it by pinging the Private IP address of VM2 with Windows PowerShell.
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/YYk1mUN.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/Lk15Eak.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
+<img src="https://i.imgur.com/WtOWTE5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+### 3.2 
+
+### 3.3 
+
+### 3.4 
+
+### 3.5
 
 ## Step 4: Analyzing Captured Data
 1. After capturing, navigate to the 'Packet List' pane to view captured packets.
