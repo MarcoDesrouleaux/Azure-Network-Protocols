@@ -127,14 +127,5 @@ This guide walks you through the process of setting up and using WireShark to mo
 </tr>
 </table>
 
-## Step 4: Analyzing Captured Data
-1. After capturing, navigate to the 'Packet List' pane to view captured packets.
-2. Use WireShark's built-in tools for further analysis, like 'Follow TCP Stream' or 'Statistics.'
-
 ## Conclusion
 You have successfully set up WireShark on an Azure VM and captured network traffic for analysis. This knowledge is a stepping stone for advanced network monitoring in Azure.
-
-## References
-- [WireShark Documentation](link-to-documentation)
-- [Microsoft Azure Virtual Machines Documentation](link-to-documentation)
-
