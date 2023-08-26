@@ -2,56 +2,83 @@
 <img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
 </p>
 
-<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+## Introduction
+This guide walks you through the process of setting up and using WireShark to monitor network traffic on Azure Virtual Machines (VMs). By the end, you'll understand how to capture and analyze packets within your Azure environment.
 
+## Prerequisites
+- An active Microsoft Azure account
+- WireShark installed on your local machine
+- Basic knowledge of network monitoring and Azure VMs
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com)
-
-<h2>Environments and Technologies Used</h2>
-
+## Environments and Technologies Used
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Various Command-Line Tools
 - Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
 - Wireshark (Protocol Analyzer)
 
-<h2>Operating Systems Used </h2>
-
+## Operating Systems Used
 - Windows 10 (21H2)
 - Ubuntu Server 20.04
 
-<h2>High-Level Steps</h2>
+## Step 1: Set Up Your Azure VM
+1. Log in to your Azure portal.
+2. Navigate to "Create a resource" > Create 2 "Virtual Machines".
+3. Launch VM1 with Remote Desktop Connection if you have Windows.
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/u34ST6M.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/P066O34.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+## Step 2: Install WireShark on Azure VM
+2. Download and install WireShark on the VM.
+3. Configure WireShark according to your monitoring needs.
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/5Kb7IcX.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/yyJH46c.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
 
-<h2>Actions and Observations</h2>
+## Step 3: Configure Capture Settings
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### 3.1 Set Capture Filters
+1. Open WireShark on the VM.
+2. Navigate to 'Capture' > 'Options.'
+3. Set capture filters to focus on the traffic you're interested in.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### 3.2 Start Capturing Traffic
+1. Still in WireShark, click 'Start' to begin capturing packets.
+2. You can stop the capture at any time by clicking 'Stop.'
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+## Step 4: Analyzing Captured Data
+1. After capturing, navigate to the 'Packet List' pane to view captured packets.
+2. Use WireShark's built-in tools for further analysis, like 'Follow TCP Stream' or 'Statistics.'
+
+## Conclusion
+You have successfully set up WireShark on an Azure VM and captured network traffic for analysis. This knowledge is a stepping stone for advanced network monitoring in Azure.
+
+## References
+- [WireShark Documentation](link-to-documentation)
+- [Microsoft Azure Virtual Machines Documentation](link-to-documentation)
+
