@@ -52,10 +52,10 @@ This guide walks you through the process of setting up and using WireShark to mo
 <table>
 <tr>
 <td>
-<img src="https://i.imgur.com/5Kb7IcX.png" alt="Image 1 Description" width="100%"/>
+<img src="https://i.imgur.com/zZwWOBL.png" alt="Image 1 Description" width="100%"/>
 </td>
 <td>
-<img src="https://i.imgur.com/yyJH46c.png" alt="Disk Sanitization Steps" width="100%"/>
+<img src="https://i.imgur.com/XK9C9mZ.png" alt="Disk Sanitization Steps" width="100%"/>
 </td>
 </tr>
 </table>
