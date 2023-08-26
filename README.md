@@ -79,13 +79,53 @@ This guide walks you through the process of setting up and using WireShark to mo
 </table>
 <img src="https://i.imgur.com/WtOWTE5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-### 3.2 
+### 3.2 Observe SSH Traffic
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
 
-### 3.3 
+### 3.3 Observe DHCP Traffic
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
 
-### 3.4 
+### 3.4 Observe DNS Traffic
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
 
-### 3.5
+### 3.5 Observe RDP Traffic
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
 
 ## Step 4: Analyzing Captured Data
 1. After capturing, navigate to the 'Packet List' pane to view captured packets.
