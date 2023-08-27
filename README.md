@@ -157,7 +157,7 @@ A perpetual ping is used to continuously monitor network connectivity.
 </td>
 </tr>
 </table>
-<img src="https://i.imgur.com/WWvPZ1q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/WWvPZ1q.png"/>
 
 
 ### Step 5: Observe DHCP Traffic
