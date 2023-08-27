@@ -80,65 +80,18 @@ This guide walks you through the process of setting up and using WireShark to mo
 </table>
 <img src="https://i.imgur.com/WtOWTE5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-### 3.2 Observe SSH Traffic
-<table>
-<tr>
-<td>
-<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
-</td>
-<td>
-<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
-</td>
-</tr>
-</table>
-
-### 3.3 Observe DHCP Traffic
-<table>
-<tr>
-<td>
-<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
-</td>
-<td>
-<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
-</td>
-</tr>
-</table>
-
-### 3.4 Observe DNS Traffic
-<table>
-<tr>
-<td>
-<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
-</td>
-<td>
-<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
-</td>
-</tr>
-</table>
-
-### 3.5 Observe RDP Traffic
-<table>
-<tr>
-<td>
-<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
-</td>
-<td>
-<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
-</td>
-</tr>
-</table>
-
-### Initiating Perpetual Ping From VM1 to VM2 to stop ICMP traffic to Come Through  (Nonstop Ping)
+### 3.2 Initiating Perpetual Ping From VM1 to VM2 to stop ICMP traffic to Come Through  (Nonstop Ping)
 To initiate perpetual ping, we'll use the following command for our Windows VM1: "ping -t [IP Address or Hostname]".
 A perpetual ping is used to continuously monitor network connectivity.
 <img src="https://i.imgur.com/UwV04Xy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-### Changing the FireWall on VM2 to Not Allow ICMP Traffic to Come Through by Using Network Security Group (NSG)
+### 3.3 Changing the FireWall on VM2 to Not Allow ICMP Traffic to Come Through by Using Network Security Group (NSG)
 1. To block ICMP traffic on VM2's FireWall, we'll go to the Network Security Groups (NSG) on our Microsoft Azure Account.
 2. We'll then open the VM2-nsg page.
 3. Open to edit the Inbound Security Rules to create a new rule that will deny inbound ICMP traffic to block the pings coming from VM1.
 4. Once we create the new rule, the ping should immediately start to time out because it will be blocked by VM2's FireWall.
 5. Once you allow ICMP traffic from VM2, the "request timed out" should stop.
+6. On Windows PowerShell, type command: Control-C to stop.
 <table>
 <tr>
 <td>
@@ -182,10 +135,59 @@ A perpetual ping is used to continuously monitor network connectivity.
 <table>
 <tr>
 <td>
-<img src="https://i.imgur.com/7asJBHF.png" alt="Disk Sanitization Steps" width="100%"/>
+<img src="https://i.imgur.com/B3CTGo5.png" alt="Disk Sanitization Steps" width="100%"/>
 </td>
 <td>
 <img src="https://i.imgur.com/RiqQObm.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
+
+### Step 4: Observe Secure Shell (SSH) Traffic
+To connect to VM1 to VM2, copy VM2 Private IP address and type ssh (Username)@(IP Address). Our is ssh Azureuser@10.0.0.5
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/lFK4OyK.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
+
+### Step 5: Observe DHCP Traffic
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
+
+### Step 6: Observe DNS Traffic
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
+
+### Step 7: Observe RDP Traffic
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
 </td>
 </tr>
 </table>
