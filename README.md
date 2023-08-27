@@ -127,5 +127,19 @@ This guide walks you through the process of setting up and using WireShark to mo
 </tr>
 </table>
 
+### Initiating Perpetual Ping From VM1 to VM2
+To initiate perpetual ping, we'll use the following command for our Windows VM1: "ping -t [IP Address or Hostname]".
+A perpetual ping is used to continuously monitor network connectivity.
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/UwV04Xy.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
+
 ## Conclusion
 You have successfully set up WireShark on an Azure VM and captured network traffic for analysis. This knowledge is a stepping stone for advanced network monitoring in Azure.
