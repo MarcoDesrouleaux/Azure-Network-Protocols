@@ -162,7 +162,7 @@ A perpetual ping is used to continuously monitor network connectivity.
 <img src="https://i.imgur.com/aAs4BOi.png" alt="Image 1 Description" width="100%"/>
 </td>
 <td>
-<img src="https://i.imgur.com/Yvvu9Wg.png" alt="Disk Sanitization Steps" width="100%"/>
+<img src="https://i.imgur.com/FIKScYU.png" alt="Disk Sanitization Steps" width="100%"/>
 </td>
 </tr>
 </table>
