@@ -67,6 +67,7 @@ This guide walks you through the process of setting up and using WireShark to mo
 2. You can stop the capture at any time by clicking 'Stop.'
 3. Let's start filtering for ICMP (Internet Control Messaging Protocol) traffic. (It's the protocol that ping uses).
 4. We'll test it by pinging the Private IP address of VM2 with Windows PowerShell.
+5. Request on WireShark will also indicate that it's timed out.
 <table>
 <tr>
 <td>
@@ -167,8 +168,16 @@ A perpetual ping is used to continuously monitor network connectivity.
 </td>
 </tr>
 </table>
-<img src="https://i.imgur.com/3miJrhV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/3miJrhV.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/P9tgDIF.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
 
 ## Conclusion
 You have successfully set up WireShark on an Azure VM and captured network traffic for analysis. This knowledge is a stepping stone for advanced network monitoring in Azure.
-https://i.imgur.com/3miJrhV.png
