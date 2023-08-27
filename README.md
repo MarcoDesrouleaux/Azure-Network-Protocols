@@ -180,17 +180,9 @@ DNS, or Domain Name System, is the technology that converts human-readable websi
 </tr>
 </table>
 
-### Step 7: Observe RDP Traffic
-<table>
-<tr>
-<td>
-<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
-</td>
-<td>
-<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
-</td>
-</tr>
-</table>
+### Step 7: Observe Remote Desktop Protocol (RDP) Traffic | Commonly uses port 3389 for TCP & UDP 
+When you use "tcp.port == 3389" on WireShark, you will see a lot of traffic because it will show you the network packets related to RDP activities. It won't show everything you do on your computer, but it will show the "computer language" or data packets specifically for remote desktop interactions. The filter "tcp.port == 3389" only shows network activity related to RDP (Remote Desktop Protocol). Network activities refer to the actions and interactions that occur over a network, such as data transmission, requests, and replies between devices. This can include web browsing, email exchanges, and file transfers.
+<img src="https://i.imgur.com/tzOowCw.png"/>
 
 ## Conclusion
 You have successfully set up WireShark on an Azure VM and captured network traffic for analysis. This knowledge is a stepping stone for advanced network monitoring in Azure.
