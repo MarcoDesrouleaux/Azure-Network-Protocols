@@ -146,6 +146,7 @@ A perpetual ping is used to continuously monitor network connectivity.
 ### Step 4: Observe Secure Shell (SSH) Traffic
 1. To connect to VM1 to VM2, copy VM2 Private IP address and type ssh (Username)@(IP Address). Our is ssh Azureuser@10.0.0.5
 2. On Windows PowerShell, type "yes", then type password and press enter. (Password will be invisible on Windows PowerShell).
+3. Type exit when you're done to close the connection with VM2.
 <table>
 <tr>
 <td>
@@ -156,16 +157,8 @@ A perpetual ping is used to continuously monitor network connectivity.
 </td>
 </tr>
 </table>
-<table>
-<tr>
-<td>
-<img src="https://i.imgur.com/lFK4OyK.png" alt="Image 1 Description" width="100%"/>
-</td>
-<td>
-<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
-</td>
-</tr>
-</table>
+<img src="https://i.imgur.com/WWvPZ1q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 
 ### Step 5: Observe DHCP Traffic
 <table>
