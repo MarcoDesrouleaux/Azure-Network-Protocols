@@ -136,6 +136,7 @@ A perpetual ping is used to continuously monitor network connectivity.
 1. To block ICMP traffic on VM2's FireWall, we'll go to the Network Security Groups (NSG) on our Microsoft Azure Account.
 2. We'll then open the VM2-nsg page.
 3. Open to edit the Inbound Security Rules to create a new rule that will deny inbound ICMP traffic to block the pings coming from VM1.
+4. Once we create the new rule, the ping should immediately start to time out because it will be blocked by VM2's FireWall.
 <table>
 <tr>
 <td>
