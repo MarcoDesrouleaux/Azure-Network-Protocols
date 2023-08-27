@@ -133,7 +133,9 @@ A perpetual ping is used to continuously monitor network connectivity.
 <img src="https://i.imgur.com/UwV04Xy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 ### Changing the FireWall on VM2 to Not Allow ICMP Traffic to Come Through by Using Network Security Group (NSG)
- To block ICMP traffic on VM2's FireWall, we'll go to the Network Security Groups (NSG) on our Microsoft Azure Account.
+1. To block ICMP traffic on VM2's FireWall, we'll go to the Network Security Groups (NSG) on our Microsoft Azure Account.
+2. We'll then open the VM2-nsg page.
+3. Open to edit the Inbound Security Rules to create a new rule that will deny inbound ICMP traffic to block the pings coming from VM1.
 <table>
 <tr>
 <td>
@@ -144,5 +146,28 @@ A perpetual ping is used to continuously monitor network connectivity.
 </td>
 </tr>
 </table>
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/61TROc0.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/Yvvu9Wg.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/aAs4BOi.png" alt="Image 1 Description" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/Yvvu9Wg.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
+<img src="https://i.imgur.com/3miJrhV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 ## Conclusion
 You have successfully set up WireShark on an Azure VM and captured network traffic for analysis. This knowledge is a stepping stone for advanced network monitoring in Azure.
+https://i.imgur.com/3miJrhV.png
