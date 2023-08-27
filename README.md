@@ -127,19 +127,22 @@ This guide walks you through the process of setting up and using WireShark to mo
 </tr>
 </table>
 
-### Initiating Perpetual Ping From VM1 to VM2
+### Initiating Perpetual Ping From VM1 to VM2 to stop ICMP traffic to Come Through  (Nonstop Ping)
 To initiate perpetual ping, we'll use the following command for our Windows VM1: "ping -t [IP Address or Hostname]".
 A perpetual ping is used to continuously monitor network connectivity.
+<img src="https://i.imgur.com/UwV04Xy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+### Changing the FireWall on VM2 to Not Allow ICMP Traffic to Come Through by Using Network Security Group (NSG)
+ To block ICMP traffic on VM2's FireWall, we'll go to the Network Security Groups (NSG) on our Microsoft Azure Account.
 <table>
 <tr>
 <td>
-<img src="https://i.imgur.com/UwV04Xy.png" alt="Image 1 Description" width="100%"/>
+<img src="https://i.imgur.com/MTiV9FV.png" alt="Image 1 Description" width="100%"/>
 </td>
 <td>
-<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
+<img src="https://i.imgur.com/TExTbH7.png" alt="Disk Sanitization Steps" width="100%"/>
 </td>
 </tr>
 </table>
-
 ## Conclusion
 You have successfully set up WireShark on an Azure VM and captured network traffic for analysis. This knowledge is a stepping stone for advanced network monitoring in Azure.
