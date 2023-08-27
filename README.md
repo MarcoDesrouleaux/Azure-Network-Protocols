@@ -159,27 +159,23 @@ A perpetual ping is used to continuously monitor network connectivity.
 </table>
 <img src="https://i.imgur.com/WWvPZ1q.png"/>
 
+### Step 5: Observe Dynamic Host Configuration Protocol (DHCP) Traffic
+It automatically assigns IP addresses and other network settings to devices on a network.
+<br>We will use command: "ipconfig /renew" to issue a new IP address for VM1.
+<img src="https://i.imgur.com/LPrtJBc.png"/>
 
-### Step 5: Observe DHCP Traffic
+### Step 6: Observe Domain Name System (DNS) Traffic
+DNS, or Domain Name System, is the technology that converts human-readable website names into IP addresses. Then nslookup is a tool that queries DNS to perform these conversions.
+1. Let's type "nslookup www.google.com" on Windows PowerShell and then observe what happens on WireShark.
+2. Let's type "nslookup www.amazon.com" on Windows PowerShell and then observe what happens on WireShark.
+<br>We will try it with User Datagram Protocol "udp.port == 53" this time on WireShark because "Port 53" is usually associated with DNS services.
 <table>
 <tr>
 <td>
-<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
+<img src="https://i.imgur.com/fdNvHGs.png" alt="Image 1 Description" width="100%"/>
 </td>
 <td>
-<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
-</td>
-</tr>
-</table>
-
-### Step 6: Observe DNS Traffic
-<table>
-<tr>
-<td>
-<img src="https://i.imgur.com/oixcf9e.png" alt="Image 1 Description" width="100%"/>
-</td>
-<td>
-<img src="https://i.imgur.com/SMR5xJy.png" alt="Disk Sanitization Steps" width="100%"/>
+<img src="https://i.imgur.com/HM5uEYz.png" alt="Image 1 Description" width="100%"/>
 </td>
 </tr>
 </table>
