@@ -138,6 +138,7 @@ A perpetual ping is used to continuously monitor network connectivity.
 2. We'll then open the VM2-nsg page.
 3. Open to edit the Inbound Security Rules to create a new rule that will deny inbound ICMP traffic to block the pings coming from VM1.
 4. Once we create the new rule, the ping should immediately start to time out because it will be blocked by VM2's FireWall.
+5. Once you allow ICMP traffic from VM2, the "request timed out" should stop.
 <table>
 <tr>
 <td>
@@ -175,6 +176,16 @@ A perpetual ping is used to continuously monitor network connectivity.
 </td>
 <td>
 <img src="https://i.imgur.com/P9tgDIF.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<img src="https://i.imgur.com/7asJBHF.png" alt="Disk Sanitization Steps" width="100%"/>
+</td>
+<td>
+<img src="https://i.imgur.com/RiqQObm.png" alt="Disk Sanitization Steps" width="100%"/>
 </td>
 </tr>
 </table>
